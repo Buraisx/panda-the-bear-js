@@ -13,21 +13,21 @@ portfolioContainer.appendChild(newPika.cloneNode())<br />
 
 
 4.
-var listItem = document.createElement('li');
-var leftSpan = document.createElement('span');
-var lastUpdated = document.createTextNode('Page last updated on');
-var date = document.createElement('span')
-leftSpan.appendChild(lastUpdated);
-listItem.appendChild(leftSpan);
-listItem.appendChild(date);
+var listItem = document.createElement('li');<br />
+var leftSpan = document.createElement('span');<br />
+var lastUpdated = document.createTextNode('Page last updated on');<br />
+var date = document.createElement('span')<br />
+leftSpan.appendChild(lastUpdated);<br />
+listItem.appendChild(leftSpan);<br />
+listItem.appendChild(date);<br />
 
-var bioInfo = document.querySelector('.bio-info')
-listItem.classList = 'bio-info-item'
-date.classList = 'bio-info-value'
-lastUpdated.classList = 'bio-info-title'
+var bioInfo = document.querySelector('.bio-info')<br />
+listItem.classList = 'bio-info-item'<br />
+date.classList = 'bio-info-value'<br />
+lastUpdated.classList = 'bio-info-title'<br />
 
-bioInfo.insertAdjacentElement('beforeend', listItem)
+bioInfo.insertAdjacentElement('beforeend', listItem)<br />
 
-var t = new Date()
-t.toLocaleString('en-us')
+var t = new Date()<br />
+t.toLocaleString('en-us')<br />
 date.innerText = t
